@@ -1,0 +1,12 @@
+<Context>
+    <Resource name="jdbc/tibero" 
+              auth="Container" 
+              type="javax.sql.DataSource" 
+              maxActive="100" 
+              maxIdle="30" 
+              maxWait="10000" 
+              username="your_tibero_username" 
+              password="your_tibero_password" 
+              driverClassName="com.tmax.tibero.jdbc.TbDriver" 
+              url="jdbc:tibero:thin:@localhost:8629:tibero" />
+</Context>
