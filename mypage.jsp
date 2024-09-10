@@ -2,16 +2,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
     <title>마이페이지</title>
-    <jsp:include page="header.jsp" />
 </head>
 <body>
     <h2>My Calendar</h2>
-    <!-- 캘린더 서비스는 여기에 추가 -->
-    <br>
-    <form action="logout" method="post">
+    <div id="calendar">
+        <!-- 캘린더 서비스 구현 -->
+    </div>
+    <form action="LogoutServlet" method="post">
         <input type="submit" value="로그아웃">
     </form>
+    <div id="weather">
+        <!-- 실시간 날씨 정보 표시 -->
+    </div>
 </body>
 </html>
