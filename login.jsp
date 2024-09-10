@@ -2,16 +2,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
     <title>로그인</title>
-    <jsp:include page="header.jsp" />
 </head>
 <body>
-    <form action="login" method="post">
-        ID: <input type="text" name="id"><br>
-        PW: <input type="password" name="password"><br>
+    <h2>로그인</h2>
+    <form action="LoginServlet" method="post">
+        <label for="id">ID:</label>
+        <input type="text" id="id" name="id" required><br>
+        <label for="password">PW:</label>
+        <input type="password" id="password" name="password" required><br>
         <input type="submit" value="로그인">
     </form>
-    <p>${message}</p>
+    <div id="weather">
+        <!-- 실시간 날씨 정보 표시 -->
+    </div>
 </body>
 </html>
