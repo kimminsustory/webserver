@@ -59,12 +59,3 @@
 4. **실시간 날씨 정보 연동**:
    - OpenWeatherMap API 키를 발급받아 `application.properties` 또는 `web.xml`에 설정합니다.
    - 각 JSP 페이지에서 날씨 정보를 표시하도록 설정합니다.
-
-## 사용법
-
-### 1. 애플리케이션 실행
-
-```bash
-cd /usr/share/tomcat/webapps/your-app
-mvn clean install -DskipTests
-mvn spring-boot:run
